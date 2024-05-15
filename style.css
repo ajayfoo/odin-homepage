@@ -1,6 +1,7 @@
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,25 +13,40 @@
 
 body,
 h1,
-h2 {
+h2,
+h3 {
   padding: 0;
   margin: 0;
 }
 
 .slash {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #0891b2;
-  position: fixed;
+  position: absolute;
   top: -38vh;
   z-index: -1;
   transform: skew(0deg, 168deg);
+  box-shadow: 0 0 8px rgb(0 0 0/0.6);
 }
-
+main {
+  margin: 3.5em 5.5em;
+}
 header {
   display: flex;
-  margin: 3.5em 5.5em;
   align-items: center;
+  margin-bottom: 8em;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h1,
+h2 {
+  font-family: "Playfair";
+  font-weight: 300;
 }
 .profile {
   box-shadow: 0 0 8px rgb(0 0 0/0.6);
@@ -38,11 +54,11 @@ header {
 }
 
 .profile > h1 {
-  font-size: 4rem;
   position: absolute;
   bottom: 0;
   right: 25%;
   text-align: center;
+  color: #00006d;
 }
 
 .profile > img {
@@ -53,9 +69,6 @@ header > section {
   box-shadow: 0 0 8px rgb(0 0 0/0.6);
   padding: 2em 3em 2em 1.5em;
   background-color: white;
-}
-header > section > h2 {
-  font-size: 2.5rem;
 }
 
 header > section > p {
@@ -70,4 +83,24 @@ header > section > p {
 .socials > svg {
   max-width: 35px;
   margin-left: 1.5em;
+}
+.work,
+.work-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-info-header,
+.work-links {
+  display: flex;
+  align-items: center;
+}
+
+.work-links {
+  margin-left: 2em;
+  font-size: 3em;
+}
+
+.work-links > :last-child {
+  margin-left: 0.5em;
 }
