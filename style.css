@@ -153,15 +153,6 @@ header > section > p {
   font-family: "Playfair Display";
 }
 
-footer {
-  padding: 3.5em 5.5em;
-  background-color: #0891b2;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  align-items: stretch;
-}
-
 .contact-me > p:first-of-type,
 address {
   font-size: 1.4rem;
@@ -199,4 +190,46 @@ address svg {
   margin: unset;
   margin-right: 2em;
   max-width: 45px;
+}
+
+.contact-me {
+  flex-shrink: 5;
+}
+
+footer {
+  padding: 3.5em 5.5em 4em;
+  background-color: #0891b2;
+  color: white;
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+}
+
+footer > img {
+  align-self: stretch;
+  justify-self: stretch;
+  max-width: 100%;
+}
+
+@media (max-width: 960px) {
+  footer {
+    padding: 3em 2.7em 4em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-me {
+    padding: 2em;
+  }
+  .contact-me > .socials {
+    text-align: center;
+  }
+  footer > img {
+    max-width: 100%;
+  }
 }
