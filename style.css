@@ -44,7 +44,8 @@ h2 {
   font-size: 2.5rem;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Playfair";
   font-weight: 300;
 }
@@ -84,6 +85,16 @@ header > section > p {
   max-width: 35px;
   margin-left: 1.5em;
 }
+.work-showcase > h2 {
+  margin-bottom: 0.4em;
+}
+.work {
+  box-shadow: 0 0 10px rgb(0 0 0/0.4);
+}
+
+.work-info {
+  padding: 1.5em;
+}
 .work,
 .work-info {
   display: flex;
@@ -96,11 +107,48 @@ header > section > p {
   align-items: center;
 }
 
+.work-info-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.work-info-header > h3 {
+  font-size: 1.5rem;
+}
 .work-links {
   margin-left: 2em;
-  font-size: 3em;
 }
 
 .work-links > :last-child {
-  margin-left: 0.5em;
+  margin-left: 1em;
+}
+
+.work-links > svg {
+  width: 1.5em;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, 435px);
+  column-gap: 45px;
+  row-gap: 50px;
+}
+
+.screenshot {
+  height: 265px;
+  background-color: rgb(153, 11, 11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshot > span {
+  top: 50%;
+  left: 25%;
+  width: min-content;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  font-family: "Playfair";
 }
