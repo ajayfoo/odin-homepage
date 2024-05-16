@@ -24,29 +24,29 @@ h3 {
   height: 100vh;
   background-color: #0891b2;
   position: absolute;
-  top: -38vh;
+  top: -32vh;
   z-index: -1;
   transform: skew(0deg, 168deg);
   box-shadow: 0 0 8px rgb(0 0 0/0.6);
 }
 main {
-  margin: 3.5em 5.5em;
+  margin: 3.5em 5.5em 6.5em;
 }
 header {
   display: flex;
   align-items: center;
-  margin-bottom: 8em;
+  margin-bottom: 8.5em;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 h1,
 h2,
 h3 {
-  font-family: "Playfair";
+  font-family: "Playfair Display";
   font-weight: 300;
 }
 .profile {
@@ -150,5 +150,53 @@ header > section > p {
   text-align: center;
   color: whitesmoke;
   font-size: 2.5rem;
-  font-family: "Playfair";
+  font-family: "Playfair Display";
+}
+
+footer {
+  padding: 3.5em 5.5em;
+  background-color: #0891b2;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: stretch;
+}
+
+.contact-me > p:first-of-type,
+address {
+  font-size: 1.4rem;
+}
+
+.location {
+  margin: 1.5em 0;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.phone > a,
+.email > a {
+  margin-left: 0.7em;
+  text-decoration: none;
+  color: inherit;
+}
+
+address svg {
+  max-width: 34px;
+}
+
+.contact-me {
+  padding-right: 2em;
+}
+.contact-me > .socials {
+  text-align: start;
+}
+
+.contact-me > .socials > svg {
+  margin: unset;
+  margin-right: 2em;
+  max-width: 45px;
 }
