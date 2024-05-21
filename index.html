@@ -16,18 +16,19 @@
     <div class="slash"></div>
     <main>
       <header>
-        <div class="profile">
-          <img
-            alt="my photo"
-            sizes="60vmin"
-            srcset="
-              images/not-me.jpg  300w,
-              images/not-me.jpg  600w,
-              images/not-me.jpg 1200w,
-              images/not-me.jpg 2000w
-            "
-          />
-          <h1>Crok Roc</h1>
+        <div class="profile-wrapper">
+          <div class="profile">
+            <img
+              alt="my photo"
+              src="images/not-my-pfp.jpg"
+              srcset="
+                images/not-my-pfp-300w.jpg   300w,
+                images/not-my-pfp-1200w.jpg 1200w
+              "
+              sizes="(max-width: 425px) 100vw,(max-width: 768px) 45vw, 40vw"
+            />
+            <h1>Crok Roc</h1>
+          </div>
         </div>
         <section>
           <h2>About Me</h2>

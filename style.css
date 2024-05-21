@@ -29,6 +29,7 @@ h3 {
   transform: skew(0deg, 168deg);
   box-shadow: 0 0 8px rgb(0 0 0/0.6);
 }
+
 main {
   margin: 3.5em 5.5em 6.5em;
 }
@@ -41,7 +42,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
 }
 h1,
 h2,
@@ -129,8 +130,8 @@ header > section > p {
 
 .works {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, 435px);
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-rows: repeat(auto-fill, 25em);
   column-gap: 45px;
   row-gap: 50px;
 }
@@ -210,14 +211,7 @@ footer > img {
   max-width: 100%;
 }
 
-@media (max-width: 960px) {
-  footer {
-    padding: 3em 2.7em 4em;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 640px) {
+@media (max-width: 425px) {
   footer {
     padding: 0;
     display: flex;
@@ -231,5 +225,40 @@ footer > img {
   }
   footer > img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 11em;
+  }
+  header {
+    display: block;
+  }
+  header > section > h2 {
+    margin-top: 0.9em;
+    text-align: center;
+  }
+  .profile-wrapper {
+    float: left;
+    position: relative;
+    width: 52vmin;
+    height: 38vmin;
+  }
+  .profile {
+    position: absolute;
+    top: -50%;
+    left: -12%;
+  }
+  .profile > h1 {
+    right: -58%;
+    top: 5%;
+  }
+  .socials {
+    display: none;
+  }
+  footer {
+    padding: 3em 2.7em 4em;
+    grid-template-columns: 1fr 1fr;
   }
 }
