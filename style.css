@@ -269,6 +269,11 @@ footer > img {
   }
 }
 
+@media (min-width: 1024px) {
+  .profile {
+    width: max-content;
+  }
+}
 @media (min-width: 426px) and (max-width: 1023px) {
   main {
     margin-top: 11em;
@@ -283,13 +288,15 @@ footer > img {
   .profile-wrapper {
     float: left;
     position: relative;
-    width: 52vmin;
-    height: 38vmin;
+    width: 20em;
+    height: 14em;
+    margin-bottom: 1em;
+    margin-right: 1em;
   }
   .profile {
     position: absolute;
-    top: -50%;
-    left: -12%;
+    bottom: 0;
+    left: -2em;
   }
   .profile > h1 {
     right: -58%;
