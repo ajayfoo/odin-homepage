@@ -18,7 +18,9 @@ h3 {
   padding: 0;
   margin: 0;
 }
-
+img {
+  max-inline-size: 100%;
+}
 .slash {
   width: 100%;
   height: 100vh;
@@ -42,7 +44,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
 }
 h1,
 h2,
@@ -212,23 +214,62 @@ footer > img {
 }
 
 @media (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+  }
+  .profile {
+    margin: 2em 2em 0;
+  }
+  .profile > img {
+    aspect-ratio: 2/3;
+    object-fit: cover;
+  }
+  main {
+    margin: 0;
+  }
+  header > section > h2 {
+    text-align: center;
+  }
+  header > section {
+    box-shadow: unset;
+    padding: 2em 3em 2em 1.5em;
+    line-height: 1.5;
+  }
+  .work-showcase > h2 {
+    text-align: center;
+  }
+  .work-showcase {
+    margin: 1em;
+  }
+  .contact-me {
+    padding: unset;
+    margin: 1em;
+  }
+  .contact-me > .socials > svg:last-child {
+    margin-right: unset;
+  }
   footer {
     padding: 0;
     display: flex;
     flex-direction: column;
   }
-  .contact-me {
-    padding: 2em;
+  footer > img {
+    max-width: 100%;
+    object-position: left center;
   }
+  .contact-me > h2,
+  .socials,
   .contact-me > .socials {
     text-align: center;
   }
-  footer > img {
-    max-width: 100%;
+  .contact-me > .socials {
+    margin-bottom: 3em;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 1023px) {
   main {
     margin-top: 11em;
   }
