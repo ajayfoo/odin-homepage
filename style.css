@@ -254,11 +254,16 @@ footer > img {
     right: -58%;
     top: 5%;
   }
-  .socials {
+  header .socials {
     display: none;
   }
   footer {
     padding: 3em 2.7em 4em;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+  }
+  footer > img {
+    aspect-ratio: 5/7;
+    object-fit: cover;
   }
 }
